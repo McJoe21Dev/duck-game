@@ -7,12 +7,31 @@
   <title>Duck Game</title>
 </head>
 <body>
-	<h1 id="header">0 Ducks! (LVL 1)</h1>
+  <div id='info' style="display:block">
+  <h1 class="header">About the Game</h1><br/>
+  <h2>Information</h2>
+  <ul>
+  <li>Press the duck to get money</li>
+  <li>Level up by getting money</li>
+  <li>Upgrade your click to earn faster</li><br/>
+  <li>Please enjoy the game!</li>
+</ul><br/>
+  
+  <h2>Symbols</h2>
+  <ul>
+    <li>💰 is for money</li>
+    <li>⭐ is for level</li>
+  </ul>
+  
+  <button class="action" onclick="toggleDiv()">Play Game</button>
+  </div>
+  
+  <div id="main" style="display:none">
+	<h1 id="header">💰 0 ⭐ 1</h1>
 	<a href="javascript:click();"><img src="duck.png"></a>
 	<progress id="bar"></progress>
 	<h1>The Shop</h1>
-	<a href="javascript:buy(0);"><h2 class="upgrade" id="upgrade">Upgrade Click!</h2></a>
-	
+	<button class="upgrade" id="upgrade" onclick="buy(0)">Upgrade Click!</button>
 
 	<script src="index.js"></script>
 </body>
