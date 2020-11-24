@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+<htmlApplication
+  applicationName="Duck Game!"
+  fixedSize="yes"
+  width=1000
+  height=600
+  customTitlebar="no" />
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,6 +20,7 @@
   <h2>Information</h2>
   <ul>
   <li>Press the duck to get money</li>
+  <li>You can also press the spacebar!</li>
   <li>Level up by getting money</li>
   <li>Upgrade your click to earn faster</li><br/>
   <li>Please enjoy the game!</li>
@@ -23,7 +32,8 @@
     <li>⭐ is for level</li>
   </ul>
   
-  <button class="action" onclick="toggleDiv()">Play Game</button>
+  <button class="action" onclick="playgame()">Play Game</button>
+  <h2>2020 mcjoe21.com</h2>
   </div>
   
   <div id="main" style="display:none">
@@ -31,7 +41,8 @@
 	<a href="javascript:click();"><img src="duck.png"></a>
 	<progress id="bar"></progress>
 	<h1>The Shop</h1>
-	<button class="upgrade" id="upgrade" onclick="buy(0)">Upgrade Click!</button>
+	<button class="upgrade" id="upgrade" onclick="buy(0)">Upgrade Click! (💰25)</button>
+  <button class="upgrade" id="skiplevel" onclick="buy(1)">Skip Level! (💰40)</button>
 
 	<script src="index.js"></script>
 </body>
